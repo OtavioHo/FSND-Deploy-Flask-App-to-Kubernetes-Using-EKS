@@ -5,6 +5,6 @@ WORKDIR /app
 # Install requirments
 RUN pip install -r requirements.txt
 # Expose port
-EXPOSE 8080
+EXPOSE 80
 # Define entrypoint
-ENTRYPOINT [ "gunicorn", "-b", ":8080", "main:APP" ]
+ENTRYPOINT [ "gunicorn", "-b", ":80", "main:APP" ]
