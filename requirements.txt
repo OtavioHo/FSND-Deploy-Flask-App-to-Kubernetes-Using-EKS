@@ -3,4 +3,3 @@ flask
 gunicorn
 pytest
 typing
-numpy
